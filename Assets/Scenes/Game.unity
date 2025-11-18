@@ -1213,6 +1213,7 @@ MonoBehaviour:
   powerupPrefab: {fileID: 9207418728420716899, guid: 4e9db4d4c4477bf42b64e345fa570b25, type: 3}
   audioPlayer: {fileID: 2142600585}
   healthPrefab: {fileID: 9207418728420716899, guid: 2a6ead64467548a4ba139b49b266af4f, type: 3}
+  coinPrefab: {fileID: 9207418728420716899, guid: 06cae16de563c004c8c2237ff3283828, type: 3}
   powerUpSound: {fileID: 8300000, guid: d6f2bff4026e55e41940c2bd0502a678, type: 3}
   powerDownSound: {fileID: 8300000, guid: b7f027bb1e1380e4a9647e0b1ff1492f, type: 3}
   livesText: {fileID: 461473449}
