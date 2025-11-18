@@ -9,6 +9,7 @@ TagManager:
   - Undefined
   - powerup
   - health
+  - coin
   layers:
   - Default
   - TransparentFX
