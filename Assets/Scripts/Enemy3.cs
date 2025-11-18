@@ -35,7 +35,7 @@ public class Enemy3 : MonoBehaviour
         {
             Destroy(whatDidIHit.gameObject);
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-            
+            gameManager.AddScore(1);
             Destroy(this.gameObject);
         }
     }
