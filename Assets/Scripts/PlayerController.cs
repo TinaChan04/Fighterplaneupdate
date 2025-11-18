@@ -134,6 +134,17 @@ public class PlayerController : MonoBehaviour
 
             gameManager.ChangeLivesText(lives);
         }
+
+    if(whatDidIHit.CompareTag("coin"))
+        {
+            Destroy(whatDidIHit.gameObject);
+            
+
+        
+
+            gameManager.AddScore(1);
+        }
+
     }
     
 

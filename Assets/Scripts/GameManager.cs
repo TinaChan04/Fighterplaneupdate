@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public GameObject powerupPrefab;
     public GameObject audioPlayer;
     public GameObject healthPrefab;
+    public GameObject coinPrefab;
     public AudioClip powerUpSound;
     public AudioClip powerDownSound;
 
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
         Instantiate(playerPrefab, transform.position, Quaternion.identity);
         StartCoroutine(SpawnPowerup());
         StartCoroutine(SpawnHealth());
+        StartCoroutine(SpawnCoin());
         InvokeRepeating("CreateEnemyOne", 1, 2);
         InvokeRepeating("CreateEnemy2", 4, 6);
         InvokeRepeating("CreateEnemy3", 2, 4);
@@ -110,6 +112,20 @@ public void PlaySound(int soundType)
             break;
     }
 }
+
+IEnumerator SpawnCoin()
+{
+    float spawnTime = Random.Range(6,8);
+    yield return new WaitForSeconds(spawnTime);
+    CreateCoin();
+    StartCoroutine(SpawnCoin());
+}
+
+void CreateCoin()
+{
+    Instantiate(coinPrefab, new Vector3(Random.Range(-6,8f), Random.Range (-6,0f), 0), Quaternion.identity);
+}
+
     // Update is called once per frame
 
      void CreateSky()

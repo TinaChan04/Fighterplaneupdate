@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 1174548904905005063}
   - component: {fileID: -4062349488108160336}
   - component: {fileID: -1044713365834207736}
-  - component: {fileID: -8721886499952031690}
   m_Layer: 0
-  m_Name: health
-  m_TagString: health
+  m_Name: Coin
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 48e84e59ce1cc554a8743eed2136c200, type: 2}
+  - {fileID: 2100000, guid: adbd7bc8255083148aa091f5d437e90f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -165,16 +164,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-8721886499952031690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9207418728420716899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ece6af4e5bfbbf47949bfa37233eb5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Destoyer
-  destructionTime: 2
