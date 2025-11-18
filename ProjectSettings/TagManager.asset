@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Weapons
   - Enemy
+  - Undefined
+  - powerup
+  - health
   layers:
   - Default
   - TransparentFX
